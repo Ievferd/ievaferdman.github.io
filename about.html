@@ -10,6 +10,10 @@
       href="./img/identity/favicon_package_v0.16/favicon.ico"
       rel="shortcut icon"
     />
+    <script
+      src="https://kit.fontawesome.com/86e6c884f0.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       type="text/css"
@@ -27,16 +31,27 @@
 <body>
   <!-- For the header -->
   <header>
-    <a href="index.html">
-      <img src="./img/identity/ieva-ferdman-logo.svg" alt="Your Name"
-    /></a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li>
+    <nav class="navbar">
+      <!-- logo -->
+      <a href="index.html" class="nav-logo">
+        <img
+          class="brand-logo"
+          src="./img/identity/ieva-ferdman-logo.svg"
+          alt="logo"
+      /></a>
+
+      <!-- navigation menu -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Work</a>
+        </li>
+        <li lass="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+        <li lass="nav-item">
           <a
             href="https://www.dropbox.com/scl/fi/xce7dvvzatjenlsvnyia5/Ieva-Ferdman2.pdf?rlkey=tt7q9wmn9hs35h4swulddfmk4&dl=0"
+            class="nav-link"
             target="_blank"
             rel="noreferrer"
             >Resume</a
@@ -46,8 +61,8 @@
     </nav>
   </header>
   <main>
-    <section title="intro" id="about">
-      <div>
+    <section title="intro" id="hero-gradient">
+      <div class="hero-text">
         <h3>
           I'm Ieva, a product designer born and raised in Latvia with a hint of
           Norway in it, currently living in Jacksonville, USA 🌏
@@ -90,18 +105,18 @@
     </div>
     <div>
       <h1>My skills</h1>
-      <h3>Prototyping</h3>
+      <h4 class="hat-title">Prototyping</h4>
       <p>
         High and Low fidelity mockups on paper, with Figma, Miro, Visual Studio
         Code and Photoshop.
       </p>
-      <h3>UX and Documentation</h3>
+      <h4 class="hat-title">UX and Documentation</h4>
       <p>
         Customer Survey Analysis, User Interviews, Metrics (Amplitude and other
         metric sites), Wireframes, Sitemaps, Prototypes, User Flows, Personas,
         A/B testing and User Testing.
       </p>
-      <h3>Collaborating with Dev Team</h3>
+      <h4 class="hat-title">Collaborating with Dev Team</h4>
       <p>
         Working together with the dev team to make sure we all collaborate in
         the discovery phase so that they can also have a part helping shape it.
@@ -117,7 +132,7 @@
   </main>
   <!-- For the footer  -->
   <footer>
-    <div>
+    <div class="container">
       <h2>Let’s connect!</h2>
       <p>
         <a href="mailto:ievaferdman.1@gmail.com">Send me a message</a>
@@ -128,30 +143,33 @@
         , and let’s discuss how I can help you.
       </p>
     </div>
-    <div>
+    <div class="container">
       <a
+        class="footer-icon"
         href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a"
+        aria-label="LinkedIn"
         target="_blank"
       >
-        <img
-          src="./img/icons/104493_linkedin_icon.svg"
-          alt="my linkedin profile"
-        />
+        <i class="fa-brands fa-linkedin-in fa-lg"></i>
       </a>
-      <a href="https://www.behance.net/IevFerd" target="_blank">
-        <img
-          src="./img/icons/5282539_behance_portfolio_social network_behance logo_icon.svg"
-          alt="my behance profile"
-        />
+      <a
+        class="footer-icon"
+        href="https://www.behance.net/IevFerd"
+        aria-label="Behance"
+        target="_blank"
+      >
+        <i class="fa-brands fa-behance fa-lg"></i>
       </a>
-      <a href="https://www.instagram.com/ievaferdman/" target="_blank">
-        <img
-          src="./img/icons/9023675_instagram_logo_fill_icon.svg"
-          alt="my instagram profile"
-        />
+      <a
+        class="footer-icon"
+        href="https://www.instagram.com/ievaferdman/"
+        aria-label="instagram"
+        target="_blank"
+      >
+        <i class="fa-brands fa-instagram fa-lg"></i>
       </a>
     </div>
-    <div>
+    <div class="container">
       <p>Copyright Ieva Ferdman 2024</p>
     </div>
   </footer>
