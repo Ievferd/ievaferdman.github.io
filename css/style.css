@@ -5,6 +5,12 @@ Secondary Color (Grey): #546170;
 Tertiary Color (Light Grey): #F7F7F7;
 Accent Color (Light Blue): #73B4FF;
 */
+* {
+  box-sizing: border-box;
+}
+
+/* Foundation */
+
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -78,7 +84,7 @@ a:active {
   color: #546170; /* selected link */
 }
 
-/* Navigation */
+/* Navigation bar */
 
 nav > ul > li > a {
   text-decoration: none;
@@ -86,6 +92,10 @@ nav > ul > li > a {
 
 nav > ul > li > a:focus {
   outline: none;
+}
+
+nav > ul > li > a:hover {
+  color: #546170;
 }
 
 nav > ul {
@@ -111,6 +121,7 @@ nav > ul {
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  padding-top: 8px;
 }
 
 .nav-menu {
@@ -132,42 +143,82 @@ nav > ul {
   margin: 8px;
 }
 
-/* Hero */
-main {
-  padding-top: 48px;
-}
-#hero-gradient {
+/* mobile menu-small screens */
+
+
+/* Hero section */
+.hero-gradient {
   margin-top: 0;
-  padding-bottom: 0%;
-  background-image: linear-gradient(to bottom, #73B4FF 0%, #F7F7F7 60%, #ffffff 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #73b4ff 0%,
+    #f7f7f7 60%,
+    #ffffff 100%
+  );
   display: inline-block;
   /* Sizing */
-  width: 100vw;
-  height: 60vh;
-}
-.hero-text {
-  color: #222F3E;
-  padding: 32px 32px 0px;
-  max-width: 65em;
+  padding-bottom: 40px;
+  width: 100%;
 }
 
+.hero-text {
+  color: #222f3e;
+  padding: 0 50px;
+  max-width: 60em;
+  margin: 24px auto;
+  margin-top: 85px;
+}
+
+/* Hero about */
+
+
+
 /* Layout styling */
-.container {
-  padding: 20px 20px 0px;
+
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
 }
-.row {
-  margin: 40px 0; /* 40px top and bottom, 0 left and right */
-}
-.project-description-wrapper {
-  margin: 16px 16px; /* 0px top and bottom, 16px left and right */
-}
+
 .hat-title {
   color: #546170;
 }
-.project-titles {
-  margin-top: 4px;
-  margin-bottom: 32px;
+
+/* project container*/
+
+.work-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  margin: auto;
+  margin-top: 40px;
+  max-width: 1200px;
 }
+.row {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.project-image-wrapper {
+  width: 40%;
+}
+.project-description-wrapper {
+  width: 60%;
+  padding: 0 0 24px 24px;
+}
+.project-titles {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* button design */
 
 .button {
   text-decoration: none; /* button on home page */
@@ -196,9 +247,70 @@ main {
 }
 
 /* Footer styling */
+
+.footer-text {
+  display: block;
+  margin: 16px;
+  margin-top: 85px;
+  text-align: center;
+}
+
+.footer-items {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+}
+.item-left {
+  flex: 50%;
+  padding: 16px;
+  text-align: left;
+}
+.item-right {
+  flex: 50%;
+  text-align: right;
+  padding: 16px;
+}
+
+.footer-items a {
+  text-decoration: none;
+}
 .footer-icon {
   padding: 4px;
 }
-footer a {
-  text-decoration: none;
+
+/* Media quaries */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (max-width: 870px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+  .project-image-wrapper {
+    width: 100%;
+  }
+  .project-description-wrapper {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .item-left .item-right {
+    flex: 100%;
+    flex-direction: column;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
