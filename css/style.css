@@ -19,6 +19,25 @@ body {
   line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
   color: #222f3e;
 }
+/* mobile typescale */
+
+:root {
+  /* Step -2: 15.8025px → 10.1301px */
+  --step--2: clamp(0.6331rem, 1.0889rem + -0.5065cqi, 0.9877rem);
+  /* Step -1: 17.7778px → 13.5034px */
+  --step--1: clamp(0.844rem, 1.1874rem + -0.3816cqi, 1.1111rem);
+  /* Step 0: 20px → 18px */
+  --step-0: clamp(1.125rem, 1.2857rem + -0.1786cqi, 1.25rem);
+  /* Step 1: 22.5px → 23.994px */
+  --step-1: clamp(1.4063rem, 1.3796rem + 0.1334cqi, 1.4996rem);
+  /* Step 2: 25.3125px → 31.984px */
+  --step-2: clamp(1.582rem, 1.4629rem + 0.5957cqi, 1.999rem);
+  /* Step 3: 28.4766px → 42.6347px */
+  --step-3: clamp(1.7798rem, 1.527rem + 1.2641cqi, 2.6647rem);
+  /* Step 4: 32.0361px → 56.832px */
+  --step-4: clamp(2.0023rem, 1.5595rem + 2.2139cqi, 3.552rem);
+}
+
 h1,
 h2,
 h3,
@@ -28,29 +47,30 @@ h4 {
 }
 h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.75em;
+  font-size: var(--step-4);
   font-weight: 700;
 }
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 2.25em;
+  font-size: var(--step-3);
   font-weight: 700;
 }
 h3 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.75em;
+  font-size: var(--step-2);
   font-weight: 500;
 }
 h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 1.35em;
+  font-size: var(--step-1);
   font-weight: 500;
 }
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: var(--step-0);
   font-weight: 300;
 }
+
 ul,
 ol {
   margin: 1em 0;
@@ -145,7 +165,6 @@ nav > ul {
 
 /* mobile menu-small screens */
 
-
 /* Hero section */
 .hero-gradient {
   margin-top: 0;
@@ -161,20 +180,44 @@ nav > ul {
   width: 100%;
 }
 
+.hero-gradient2 {
+  margin-top: 0;
+  background-image: linear-gradient(340deg, #fdfbfb 0%, #ebedee 100%);
+  display: inline-block;
+  /* Sizing */
+  padding-bottom: 40px;
+  width: 100%;
+}
+.hero-gradient3 {
+  margin-top: 0;
+  background-image: linear-gradient(
+    225deg,
+    #ffe29f 0%,
+    #ffa99f 48%,
+    #ff719a 100%
+  );
+  display: inline-block;
+  /* Sizing */
+  padding-bottom: 40px;
+  width: 100%;
+}
+
 .hero-text {
   color: #222f3e;
   padding: 0 50px;
   max-width: 60em;
-  margin: 24px auto;
+  margin: 70px auto;
   margin-top: 85px;
+}
+
+.big-title {
+  margin-top: 0;
+  margin-bottom: 32px;
 }
 
 /* Hero about */
 
-
-
 /* Layout styling */
-
 
 .text-container {
   display: flex;
@@ -198,7 +241,7 @@ nav > ul {
   flex-direction: column;
   width: 85%;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 16px;
   max-width: 1200px;
 }
 .row {
@@ -283,6 +326,9 @@ nav > ul {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
+
+/* Fallback variables for browsers that don't support clamp */
+
 @media only screen and (max-width: 870px) {
   .row {
     display: flex;
