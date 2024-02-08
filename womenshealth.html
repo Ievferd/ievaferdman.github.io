@@ -5,21 +5,26 @@
     <meta name="author" content="IevaFerdman" />
     <meta name="description" content="Product Designer in Jacksonville" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home page</title>
+    <title>Project Womens Health</title>
+    <!-- ===== Favicon ===== -->
     <link
       href="./img/identity/favicon_package_v0.16/favicon.ico"
       rel="shortcut icon"
     />
+    <!-- ===== Fontawesome ===== -->
     <script
       src="https://kit.fontawesome.com/86e6c884f0.js"
       crossorigin="anonymous"
     ></script>
+    <!-- ===== Stylesheet ===== -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
+    <!-- ===== CSS ===== -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- ===== Google fonts ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,32 +37,43 @@
   <body>
     <!-- For the header -->
     <header>
-      <nav class="navbar">
-        <!-- Menu toggle -->
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fas fa-bars"></i
-        ></span>
-        <!-- logo -->
-        <a href="index.html" class="nav-logo"> Ieva Ferdman</a>
-        <!-- Large screen navigation menu -->
-        <ul class="nav-menu" id="js-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Work</a>
-          </li>
-          <li lass="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li lass="nav-item">
-            <a
-              href="https://www.dropbox.com/scl/fi/xce7dvvzatjenlsvnyia5/Ieva-Ferdman2.pdf?rlkey=tt7q9wmn9hs35h4swulddfmk4&dl=0"
-              class="nav-link"
-              target="_blank"
-              rel="noreferrer"
-              >Resume</a
-            >
-          </li>
-        </ul>
-        <!-- Small Screen Navigation Bar -->
+      <nav>
+        <div class="nav-bar">
+          <!-- Hamburger/closing -->
+          <i class="fa-solid fa-bars sidebarOpen"></i>
+          <!-- logo -->
+          <span class="logo"><a href="index.html"> Ieva Ferdman</a></span>
+
+          <!-- Menu items -->
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="index.html"> Ieva Ferdman</a></span>
+              <i class="fa-solid fa-xmark sidebarClose"></i>
+            </div>
+            <ul class="nav-links">
+              <li>
+                <a href="index.html" class="nav-link">Work</a>
+              </li>
+              <li>
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.dropbox.com/scl/fi/xce7dvvzatjenlsvnyia5/Ieva-Ferdman2.pdf?rlkey=tt7q9wmn9hs35h4swulddfmk4&dl=0"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="darkLight">
+            <div class="dark-light">
+              <i class="fa-regular fa-moon moon"></i>
+              <i class="fa-regular fa-sun sun"></i>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -124,515 +140,564 @@
         </div>
       </section>
       <!-- For the main body -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
       <div class="hero-text">
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_2.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_2.png"
-            alt="Literture review"
-          />
-        </picture>
-        <h3>Summary of Literature review</h3>
-        <ol>
+        <div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_2.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_2.png"
+                alt="Literture review"
+              />
+            </picture>
+          </div>
+          <h3>Summary of Literature review</h3>
+          <ol>
+            <li>
+              Current lack of understanding about LGBT women's health in
+              healthcare and the LGBT community.
+            </li>
+            <li>
+              Healthcare providers may underestimate health concerns for lesbian
+              and bisexual women.
+            </li>
+            <li>
+              Increased risks of certain cancers and lower screening rates for
+              lesbian and bisexual women.
+            </li>
+            <li>
+              Significant awareness gap among Women who have Sex with Women
+              (WSW) about STD transmission
+            </li>
+            <li>
+              Lesbians often lack protection due to misconceptions or knowledge
+              gaps.
+            </li>
+            <li>
+              Urgent need to raise awareness and knowledge about LGBT women's
+              health for both professionals and the community.
+            </li>
+            <li>
+              Emphasizes the need for a dedicated platform for information
+              dissemination and support.
+            </li>
+          </ol>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_3.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_3.jpg"
+                alt="Literture review results"
+              />
+            </picture>
+          </div>
+          <h3>Stakeholder Interview</h3>
+          <p>
+            We conducted a one-on-one interview, engaging with a knowledgeable
+            representative from Sex og Samfunn, a clinic where our stakeholder
+            serves as a nurse. The interview, conducted as a team through a
+            45-minute Zoom session after working hours, revealed key insights:
+          </p>
+          <ol>
+            <!-- Parent open li tag -->
+            <li>
+              <b>Lack of Resources for WSW:</b>
+              <ul>
+                <li>
+                  There's no natural avenue for Women who have Sex with Women
+                  (WSW) to access help, information, or healthcare.
+                </li>
+              </ul>
+            </li>
+            <!-- Parent close li tag -->
+            <!-- Parent open li tag -->
+            <li>
+              <b>Information Gap:</b>
+              <ul>
+                <li>Limited information exists for WSW compared to gay men.</li>
+              </ul>
+            </li>
+            <!-- Parent close li tag -->
+            <!-- Parent open li tag -->
+            <li>
+              <b>Tailored Healthcare Need:</b>
+              <ul>
+                <li>
+                  There's a demand for healthcare tailored specifically to WSW.
+                </li>
+              </ul>
+            </li>
+            <!-- Parent close li tag -->
+            <!-- Parent open li tag -->
+            <li>
+              <b>Educational Gap:</b>
+              <ul>
+                <li>
+                  Norwegians lack education about WSW in schools, emphasizing
+                  the need for information on sexual, physical health, and
+                  rights.
+                </li>
+              </ul>
+            </li>
+            <!-- Parent close li tag -->
+            <!-- Parent open li tag -->
+            <li>
+              <b>Misinformation Challenge:</b>
+              <ul>
+                <li>
+                  Many individuals receive misinformation about their health and
+                  needs.
+                </li>
+              </ul>
+            </li>
+            <!-- Parent close li tag -->
+            <!-- Parent open li tag -->
+            <li>
+              <b>Healthcare Professional Awareness:</b>
+              <ul>
+                <li>
+                  Healthcare professionals often lack education on WSW topics
+                  and may make assumptions about individuals' sexual
+                  orientation.
+                </li>
+              </ul>
+            </li>
+            <!-- Parent close li tag -->
+          </ol>
+          <p>
+            These insights underscore the necessity of addressing informational
+            and healthcare gaps for WSW, emphasizing the need for targeted
+            resources and education.
+          </p>
+        </div>
+        <div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_4.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_4.png"
+                alt="Survey"
+              />
+            </picture>
+          </div>
+          <h3>Survey</h3>
+          <p>
+            We conducted a 11-question survey using a Google Survey link to
+            gather insights in a non-intimidating manner. This approach allowed
+            us to understand respondent motivations, pain points, and priorities
+            while ensuring a private environment for open and honest feedback.
+          </p>
+          <p>
+            The survey aimed to capture valuable opinions and comments,
+            providing a baseline for future benchmarks. Combined with insights
+            from a stakeholder interview, the survey results will inform the
+            development of a unique product tailored to unmet needs in Norway.
+          </p>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_5.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_5.jpg"
+                alt="Survey result analysis"
+              />
+            </picture>
+          </div>
+          <h3>Summary of Survey</h3>
+          <p><b>Healthcare Professional:</b></p>
           <li>
-            Current lack of understanding about LGBT women's health in
-            healthcare and the LGBT community.
+            Many healthcare professionals lack education on WSW topics and make
+            assumptions about sexual orientation.
+          </li>
+          <p><b>Women's Health:</b></p>
+          <li>
+            64.5% surveyed never asked about sexual orientation by healthcare
+            personnel.
           </li>
           <li>
-            Healthcare providers may underestimate health concerns for lesbian
-            and bisexual women.
+            Sexual minority women struggle to find knowledgeable and comfortable
+            healthcare providers.
           </li>
           <li>
-            Increased risks of certain cancers and lower screening rates for
-            lesbian and bisexual women.
+            Limited information received by participants about WSW health, with
+            a lack of awareness about STD transmission.
           </li>
+          <p><b>Education:</b></p>
+          <li>38.7% gather WSW information from the internet.</li>
+          <li>65.5% prefer more WSW education in schools.</li>
+          <p><b>Information Needs:</b></p>
           <li>
-            Significant awareness gap among Women who have Sex with Women (WSW)
-            about STD transmission
+            Desired information includes mental health, sex and pleasure, STDs,
+            and different sexualities.
           </li>
-          <li>
-            Lesbians often lack protection due to misconceptions or knowledge
-            gaps.
-          </li>
-          <li>
-            Urgent need to raise awareness and knowledge about LGBT women's
-            health for both professionals and the community.
-          </li>
-          <li>
-            Emphasizes the need for a dedicated platform for information
-            dissemination and support.
-          </li>
-        </ol>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_3.jpg"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_3.jpg"
-            alt="Literture review results"
-          />
-        </picture>
-        <h3>Stakeholder Interview</h3>
-        <p>
-          We conducted a one-on-one interview, engaging with a knowledgeable
-          representative from Sex og Samfunn, a clinic where our stakeholder
-          serves as a nurse. The interview, conducted as a team through a
-          45-minute Zoom session after working hours, revealed key insights:
-        </p>
-        <ol>
-          <!-- Parent open li tag -->
-          <li>
-            <b>Lack of Resources for WSW:</b>
-            <ul>
-              <li>
-                There's no natural avenue for Women who have Sex with Women
-                (WSW) to access help, information, or healthcare.
-              </li>
-            </ul>
-          </li>
-          <!-- Parent close li tag -->
-          <!-- Parent open li tag -->
-          <li>
-            <b>Information Gap:</b>
-            <ul>
-              <li>Limited information exists for WSW compared to gay men.</li>
-            </ul>
-          </li>
-          <!-- Parent close li tag -->
-          <!-- Parent open li tag -->
-          <li>
-            <b>Tailored Healthcare Need:</b>
-            <ul>
-              <li>
-                There's a demand for healthcare tailored specifically to WSW.
-              </li>
-            </ul>
-          </li>
-          <!-- Parent close li tag -->
-          <!-- Parent open li tag -->
-          <li>
-            <b>Educational Gap:</b>
-            <ul>
-              <li>
-                Norwegians lack education about WSW in schools, emphasizing the
-                need for information on sexual, physical health, and rights.
-              </li>
-            </ul>
-          </li>
-          <!-- Parent close li tag -->
-          <!-- Parent open li tag -->
-          <li>
-            <b>Misinformation Challenge:</b>
-            <ul>
-              <li>
-                Many individuals receive misinformation about their health and
-                needs.
-              </li>
-            </ul>
-          </li>
-          <!-- Parent close li tag -->
-          <!-- Parent open li tag -->
-          <li>
-            <b>Healthcare Professional Awareness:</b>
-            <ul>
-              <li>
-                Healthcare professionals often lack education on WSW topics and
-                may make assumptions about individuals' sexual orientation.
-              </li>
-            </ul>
-          </li>
-          <!-- Parent close li tag -->
-        </ol>
-        <p>
-          These insights underscore the necessity of addressing informational
-          and healthcare gaps for WSW, emphasizing the need for targeted
-          resources and education.
-        </p>
-      </div>
-      <div class="hero-text">
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_4.png"
-            media="(max-width:767px)"
-          />
-          <img src="./img/Project-womenshealth/whealth_4.png" alt="Survey" />
-        </picture>
-        <h3>Survey</h3>
-        <p>
-          We conducted a 11-question survey using a Google Survey link to gather
-          insights in a non-intimidating manner. This approach allowed us to
-          understand respondent motivations, pain points, and priorities while
-          ensuring a private environment for open and honest feedback.
-        </p>
-        <p>
-          The survey aimed to capture valuable opinions and comments, providing
-          a baseline for future benchmarks. Combined with insights from a
-          stakeholder interview, the survey results will inform the development
-          of a unique product tailored to unmet needs in Norway.
-        </p>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_5.jpg"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_5.jpg"
-            alt="Survey result analysis"
-          />
-        </picture>
-        <h3>Summary of Survey</h3>
-        <p><b>Healthcare Professional:</b></p>
-        <li>
-          Many healthcare professionals lack education on WSW topics and make
-          assumptions about sexual orientation.
-        </li>
-        <p><b>Women's Health:</b></p>
-        <li>
-          64.5% surveyed never asked about sexual orientation by healthcare
-          personnel.
-        </li>
-        <li>
-          Sexual minority women struggle to find knowledgeable and comfortable
-          healthcare providers.
-        </li>
-        <li>
-          Limited information received by participants about WSW health, with a
-          lack of awareness about STD transmission.
-        </li>
-        <p><b>Education:</b></p>
-        <li>38.7% gather WSW information from the internet.</li>
-        <li>65.5% prefer more WSW education in schools.</li>
-        <p><b>Information Needs:</b></p>
-        <li>
-          Desired information includes mental health, sex and pleasure, STDs,
-          and different sexualities.
-        </li>
-        <h3>Personas</h3>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_6.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_6.png"
-            alt="Persona profile 1"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_7.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_7.png"
-            alt="Persona profile 2"
-          />
-        </picture>
-      </div>
-      <div class="hero-text">
-        <h3>Problem Statement</h3>
-        <p>
-          Women who have sex with women encounter difficulties accessing
-          relevant information about sexual health and mental well-being
-          tailored to their population. Establishing a platform offering
-          comprehensive resources on sex, sexual health, and mental health for
-          WSW has the potential to positively impact this population, providing
-          support and knowledge on often overlooked topics.
-        </p>
-        <p><b>How Might We (HMW) Questions:</b></p>
-        <ol>
-          <li>
-            How might we normalize and present WSW education in an engaging and
-            enjoyable manner?
-          </li>
-          <li>
-            How might we simplify the learning process for WSW to explore
-            relevant topics?
-          </li>
-          <li>
-            How might we inspire and encourage WSW to proactively seek
-            information about their unique needs?
-          </li>
-        </ol>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_8.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_8.png"
-            alt="The mind mapping"
-          />
-        </picture>
-        <h3>Mind Mapping</h3>
-        <p>
-          Ideas are crucial, and mind mapping proved invaluable for organizing a
-          wealth of information, responses, and survey findings. This method
-          fostered creativity, displayed hierarchy, facilitated discussions on
-          potential solutions rooted in research data, and illustrated
-          relationships between our ideas. The collaborative and productive
-          atmosphere enhanced our ability to move forward. In the pursuit of
-          refining our proposed AI and avoiding assumptions, we conducted card
-          sorting testing.
-        </p>
-        <h3>Card Sorting</h3>
-        <p>
-          Utilizing OptimalSort for insights, we created 16 cards across 6
-          categories (Definitions, Home Screen, STIs, Your Body, Mental Health,
-          and Sexuality). The testing validated our assumptions, and 71% of
-          participants successfully completed the study in a median time of
-          03:21. With a completion rate of 71%, the process proved helpful,
-          emphasizing its importance in our overall development process.
-        </p>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_9.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_9.png"
-            alt="The results matrix"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_10.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_10.png"
-            alt="Popular placement matrix"
-          />
-        </picture>
-        <h3>Information Architecture</h3>
-        <p>
-          Information architecture prioritizes user goals and cognitive effort
-          utilization.
-        </p>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_11.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_11.png"
-            alt="information achitecture"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_12.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_12.png"
-            alt="user flow"
-          />
-        </picture>
-      </div>
-      <div class="hero-text">
-        <h3>Prototyping</h3>
-        <p>
-          Drawing inspiration from Information Architecture (IA), user flow, and
-          task flow, we initiate the sketching phase to explore diverse website
-          designs. Employing low-fidelity methods and various tools such as
-          Miro, InVision, and others, we bring these ideas to life.
-        </p>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_13.jpg"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_13.jpg"
-            alt="Prototyping sketches"
-          />
-        </picture>
-        <h3>Design System</h3>
-        <p>
-          In team collaboration, we established a style guide covering
-          typography, website components, and layout details. Using a 12-column
-          grid ensured consistency in spacing and alignment. Initial sketches
-          gave a content overview, and high-fidelity desktop wireframes were
-          created for usability testing, with a focus on desktop design for this
-          project.
-        </p>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_14.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_14.png"
-            alt="Design systems typography"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_15.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_15.png"
-            alt="Design systems colors"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_16.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_16.png"
-            alt="Design systems components"
-          />
-        </picture>
-        <h3>Usability Testing Highlights</h3>
-        <ul>
-          <li>
-            Planning involved method selection, metric definition, script
-            creation, and participant recruitment.
-          </li>
-          <li>
-            Goals centered on enhancing navigation for a better user experience,
-            exploring user impressions and preferences.
-          </li>
-          <li>
-            Employed Concurrent Think Aloud (CTA) and Concurrent Probing (CP)
-            techniques for real-time insights.
-          </li>
-          <li>
-            Metrics focused on behavioral and attitudinal data aligned with
-            testing goals.
-          </li>
-          <li>
-            User feedback gathered through verbal expressions and observed
-            behavior.
-          </li>
-          <li>
-            Tasks included finding information about endometriosis,
-            understanding klamydia, and exploring chat usage.
-          </li>
-          <li>
-            Evaluative questions measured task success and gathered attitudinal
-            information.
-          </li>
-          <li>
-            Targeted women participants, aiming for the WSW population but open
-            to sexually open women for recruitment.
-          </li>
-        </ul>
-      </div>
-      <div class="hero-text">
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_17.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_17.png"
-            alt="Page layout1"
-          />
-        </picture>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_18.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_18.png"
-            alt="Page layout2"
-          />
-        </picture>
-        <h3>Results Summary</h3>
-        <p>
-          Overall, participants successfully completed tasks, except for one due
-          to a technical error with the chat box.
-        </p>
-        <p><b>Task Struggles:</b></p>
-        <ul>
-          <li>
-            <b>Task 1 (Endometriosis):</b> Users adapted to a malfunctioning
-            search bar, utilizing alternative navigation methods.
-          </li>
-          <li>
-            <b>Task 2 (Chlamydia):</b> Participants navigated seamlessly, but
-            one felt overwhelmed by the comprehensive content layout.
-          </li>
-          <li>
-            <b>Task 3 (Chat Usage): </b>Initial participant faced challenges due
-            to a non-functional chat box, resolved for subsequent users.
-          </li>
-        </ul>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_19.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_19.png"
-            alt="Changes from usability"
-          />
-        </picture>
-        <h3>Reflections and Learnings</h3>
-        <h4>Logistics</h4>
-        <p>
-          Recruitment challenges surfaced in the empathy and ideate stages due
-          to our target users' elusive nature. Bias was evident in low response
-          rates, impacting sampling accuracy. Card sorting for ideation faced
-          obstacles with desktop-exclusive testing, yielding fewer results.
-        </p>
-        <h4>Usability Testing</h4>
-        <p>
-          Moderate-remote testing proved time-intensive for participant
-          recruitment, but the sessions provided valuable insights. Recognizing
-          the necessity for ongoing testing, we refined our ideas and addressed
-          technical improvements.
-        </p>
-        <h4>Design Thinking Process</h4>
-        <p>
-          Navigating a sparse landscape of resources on women's health and WSW
-          in the empathy stage highlighted our project's uniqueness. The
-          non-linear nature of design thinking became explicit, emphasizing the
-          importance of flexibility and empathy in propelling the process
-          forward.
-        </p>
-        <h4>Stakeholder Collaboration</h4>
-        <p>
-          While team collaboration effectively distributed work, improved
-          internal communication and more frequent meetings could have enhanced
-          efficiency. Additional stakeholder involvement throughout the process
-          would have facilitated continuous feedback and refinement.
-        </p>
-        <h4>Team Dynamics</h4>
-        <p>
-          Despite geographical differences, the team collaborated well,
-          leveraging diverse skills. Recognizing user needs and aligning with
-          the business brief remained consistent. While meetings were limited,
-          the team's collective effort aims to make a meaningful impact on
-          women's awareness in Norway.
-        </p>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_20.png"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_20.png"
-            alt="Final look of website"
-          />
-        </picture>
-        <p>
-          Check out prototype and design system -
-          <a
-            href="https://www.figma.com/file/6M4W5PTH1zYB9hT91HDX3T/WSW-website-design_-final?type=design&node-id=0%3A1&mode=design&t=vVmvU89ASeCVby1A-1"
-            >Figma link</a
-          >
-        </p>
+          <h3>Personas</h3>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_6.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_6.png"
+                alt="Persona profile 1"
+              />
+            </picture>
+          </div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_7.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_7.png"
+                alt="Persona profile 2"
+              />
+            </picture>
+          </div>
+        </div>
+        <div>
+          <h3>Problem Statement</h3>
+          <p>
+            Women who have sex with women encounter difficulties accessing
+            relevant information about sexual health and mental well-being
+            tailored to their population. Establishing a platform offering
+            comprehensive resources on sex, sexual health, and mental health for
+            WSW has the potential to positively impact this population,
+            providing support and knowledge on often overlooked topics.
+          </p>
+          <p><b>How Might We (HMW) Questions:</b></p>
+          <ol>
+            <li>
+              How might we normalize and present WSW education in an engaging
+              and enjoyable manner?
+            </li>
+            <li>
+              How might we simplify the learning process for WSW to explore
+              relevant topics?
+            </li>
+            <li>
+              How might we inspire and encourage WSW to proactively seek
+              information about their unique needs?
+            </li>
+          </ol>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_8.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_8.png"
+                alt="The mind mapping"
+              />
+            </picture>
+          </div>
+          <h3>Mind Mapping</h3>
+          <p>
+            Ideas are crucial, and mind mapping proved invaluable for organizing
+            a wealth of information, responses, and survey findings. This method
+            fostered creativity, displayed hierarchy, facilitated discussions on
+            potential solutions rooted in research data, and illustrated
+            relationships between our ideas. The collaborative and productive
+            atmosphere enhanced our ability to move forward. In the pursuit of
+            refining our proposed AI and avoiding assumptions, we conducted card
+            sorting testing.
+          </p>
+          <h3>Card Sorting</h3>
+          <p>
+            Utilizing OptimalSort for insights, we created 16 cards across 6
+            categories (Definitions, Home Screen, STIs, Your Body, Mental
+            Health, and Sexuality). The testing validated our assumptions, and
+            71% of participants successfully completed the study in a median
+            time of 03:21. With a completion rate of 71%, the process proved
+            helpful, emphasizing its importance in our overall development
+            process.
+          </p>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_9.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_9.png"
+                alt="The results matrix"
+              />
+            </picture>
+          </div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_10.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_10.png"
+                alt="Popular placement matrix"
+              />
+            </picture>
+          </div>
+          <h3>Information Architecture</h3>
+          <p>
+            Information architecture prioritizes user goals and cognitive effort
+            utilization.
+          </p>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_11.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_11.png"
+                alt="information achitecture"
+              />
+            </picture>
+          </div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_12.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_12.png"
+                alt="user flow"
+              />
+            </picture>
+          </div>
+        </div>
+        <div>
+          <h3>Prototyping</h3>
+          <p>
+            Drawing inspiration from Information Architecture (IA), user flow,
+            and task flow, we initiate the sketching phase to explore diverse
+            website designs. Employing low-fidelity methods and various tools
+            such as Miro, InVision, and others, we bring these ideas to life.
+          </p>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_13.jpg"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_13.jpg"
+                alt="Prototyping sketches"
+              />
+            </picture>
+          </div>
+          <h3>Design System</h3>
+          <p>
+            In team collaboration, we established a style guide covering
+            typography, website components, and layout details. Using a
+            12-column grid ensured consistency in spacing and alignment. Initial
+            sketches gave a content overview, and high-fidelity desktop
+            wireframes were created for usability testing, with a focus on
+            desktop design for this project.
+          </p>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_14.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_14.png"
+                alt="Design systems typography"
+              />
+            </picture>
+          </div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_15.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_15.png"
+                alt="Design systems colors"
+              />
+            </picture>
+          </div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_16.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_16.png"
+                alt="Design systems components"
+              />
+            </picture>
+          </div>
+          <h3>Usability Testing Highlights</h3>
+          <ul>
+            <li>
+              Planning involved method selection, metric definition, script
+              creation, and participant recruitment.
+            </li>
+            <li>
+              Goals centered on enhancing navigation for a better user
+              experience, exploring user impressions and preferences.
+            </li>
+            <li>
+              Employed Concurrent Think Aloud (CTA) and Concurrent Probing (CP)
+              techniques for real-time insights.
+            </li>
+            <li>
+              Metrics focused on behavioral and attitudinal data aligned with
+              testing goals.
+            </li>
+            <li>
+              User feedback gathered through verbal expressions and observed
+              behavior.
+            </li>
+            <li>
+              Tasks included finding information about endometriosis,
+              understanding klamydia, and exploring chat usage.
+            </li>
+            <li>
+              Evaluative questions measured task success and gathered
+              attitudinal information.
+            </li>
+            <li>
+              Targeted women participants, aiming for the WSW population but
+              open to sexually open women for recruitment.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_17.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_17.png"
+                alt="Page layout1"
+              />
+            </picture>
+          </div>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_18.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_18.png"
+                alt="Page layout2"
+              />
+            </picture>
+          </div>
+          <h3>Results Summary</h3>
+          <p>
+            Overall, participants successfully completed tasks, except for one
+            due to a technical error with the chat box.
+          </p>
+          <p><b>Task Struggles:</b></p>
+          <ul>
+            <li>
+              <b>Task 1 (Endometriosis):</b> Users adapted to a malfunctioning
+              search bar, utilizing alternative navigation methods.
+            </li>
+            <li>
+              <b>Task 2 (Chlamydia):</b> Participants navigated seamlessly, but
+              one felt overwhelmed by the comprehensive content layout.
+            </li>
+            <li>
+              <b>Task 3 (Chat Usage): </b>Initial participant faced challenges
+              due to a non-functional chat box, resolved for subsequent users.
+            </li>
+          </ul>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_19.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_19.png"
+                alt="Changes from usability"
+              />
+            </picture>
+          </div>
+          <h3>Reflections and Learnings</h3>
+          <h4>Logistics</h4>
+          <p>
+            Recruitment challenges surfaced in the empathy and ideate stages due
+            to our target users' elusive nature. Bias was evident in low
+            response rates, impacting sampling accuracy. Card sorting for
+            ideation faced obstacles with desktop-exclusive testing, yielding
+            fewer results.
+          </p>
+          <h4>Usability Testing</h4>
+          <p>
+            Moderate-remote testing proved time-intensive for participant
+            recruitment, but the sessions provided valuable insights.
+            Recognizing the necessity for ongoing testing, we refined our ideas
+            and addressed technical improvements.
+          </p>
+          <h4>Design Thinking Process</h4>
+          <p>
+            Navigating a sparse landscape of resources on women's health and WSW
+            in the empathy stage highlighted our project's uniqueness. The
+            non-linear nature of design thinking became explicit, emphasizing
+            the importance of flexibility and empathy in propelling the process
+            forward.
+          </p>
+          <h4>Stakeholder Collaboration</h4>
+          <p>
+            While team collaboration effectively distributed work, improved
+            internal communication and more frequent meetings could have
+            enhanced efficiency. Additional stakeholder involvement throughout
+            the process would have facilitated continuous feedback and
+            refinement.
+          </p>
+          <h4>Team Dynamics</h4>
+          <p>
+            Despite geographical differences, the team collaborated well,
+            leveraging diverse skills. Recognizing user needs and aligning with
+            the business brief remained consistent. While meetings were limited,
+            the team's collective effort aims to make a meaningful impact on
+            women's awareness in Norway.
+          </p>
+          <div class="pic">
+            <picture>
+              <source
+                srcset="./img/Project-womenshealth/whealth_20.png"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./img/Project-womenshealth/whealth_20.png"
+                alt="Final look of website"
+              />
+            </picture>
+          </div>
+          <p>
+            Check out prototype and design system -
+            <a
+              href="https://www.figma.com/file/6M4W5PTH1zYB9hT91HDX3T/WSW-website-design_-final?type=design&node-id=0%3A1&mode=design&t=vVmvU89ASeCVby1A-1"
+              >Figma link</a
+            >
+          </p>
+        </div>
       </div>
     </main>
     <!-- For the footer  -->
@@ -642,45 +707,49 @@
         <p>
           <a href="mailto:ievaferdman.1@gmail.com">Send me a message</a>
           or
-          <a href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a/"
+          <a
+            href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a/"
+            aria-label="LinkedIn"
+            target="_blank"
             >connect on LinkedIn</a
           >
           , and let’s discuss how I can help you.
         </p>
       </div>
-      <div class="footer-items">
-        <div class="item-left">
-          <p>Copyright Ieva Ferdman 2024</p>
-        </div>
-        <div class="item-right">
-          <a
-            class="footer-icon"
-            href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a"
-            aria-label="LinkedIn"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in fa-lg"></i>
-          </a>
-          <a
-            class="footer-icon"
-            href="https://www.behance.net/IevFerd"
-            aria-label="Behance"
-            target="_blank"
-          >
-            <i class="fa-brands fa-behance fa-lg"></i>
-          </a>
-          <a
-            class="footer-icon"
-            href="https://www.instagram.com/ievaferdman/"
-            aria-label="instagram"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram fa-lg"></i>
-          </a>
+      <div>
+        <div class="footer-items">
+          <div class="item-left">
+            <p>Copyright Ieva Ferdman 2024</p>
+          </div>
+          <div class="item-right">
+            <a
+              class="footer-icon"
+              href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in fa-lg"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.behance.net/IevFerd"
+              aria-label="Behance"
+              target="_blank"
+            >
+              <i class="fa-brands fa-behance fa-lg"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.instagram.com/ievaferdman/"
+              aria-label="instagram"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-lg"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

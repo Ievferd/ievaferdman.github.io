@@ -6,20 +6,25 @@
     <meta name="description" content="Product Designer in Jacksonville" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Home page</title>
+    <!-- ===== Favicon ===== -->
     <link
       href="./img/identity/favicon_package_v0.16/favicon.ico"
       rel="shortcut icon"
     />
+    <!-- ===== Fontawesome ===== -->
     <script
       src="https://kit.fontawesome.com/86e6c884f0.js"
       crossorigin="anonymous"
     ></script>
+    <!-- ===== Stylesheet ===== -->
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
+    <!-- ===== CSS ===== -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- ===== Google fonts ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,35 +34,46 @@
       rel="stylesheet"
     />
   </head>
-  <body class="home">
+  <body>
     <!-- For the header -->
     <header>
-      <nav class="navbar">
-        <!-- Menu toggle -->
-        <span class="navbar-toggle" id="js-navbar-toggle">
-          <i class="fas fa-bars"></i
-        ></span>
-        <!-- logo -->
-        <a href="index.html" class="nav-logo"> Ieva Ferdman</a>
-        <!-- Large screen navigation menu -->
-        <ul class="nav-menu" id="js-menu">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Work</a>
-          </li>
-          <li lass="nav-item">
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li lass="nav-item">
-            <a
-              href="https://www.dropbox.com/scl/fi/xce7dvvzatjenlsvnyia5/Ieva-Ferdman2.pdf?rlkey=tt7q9wmn9hs35h4swulddfmk4&dl=0"
-              class="nav-link"
-              target="_blank"
-              rel="noreferrer"
-              >Resume</a
-            >
-          </li>
-        </ul>
-        <!-- Small Screen Navigation Bar -->
+      <nav>
+        <div class="nav-bar">
+          <!-- Hamburger/closing -->
+          <i class="fa-solid fa-bars sidebarOpen"></i>
+          <!-- logo -->
+          <span class="logo"><a href="index.html"> Ieva Ferdman</a></span>
+
+          <!-- Menu items -->
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="index.html"> Ieva Ferdman</a></span>
+              <i class="fa-solid fa-xmark sidebarClose"></i>
+            </div>
+            <ul class="nav-links">
+              <li>
+                <a href="index.html" class="nav-link">Work</a>
+              </li>
+              <li>
+                <a href="about.html" class="nav-link">About</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.dropbox.com/scl/fi/xce7dvvzatjenlsvnyia5/Ieva-Ferdman2.pdf?rlkey=tt7q9wmn9hs35h4swulddfmk4&dl=0"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="darkLight">
+            <div class="dark-light">
+              <i class="fa-regular fa-moon moon"></i>
+              <i class="fa-regular fa-sun sun"></i>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- For the hero section -->
@@ -136,45 +152,49 @@
         <p>
           <a href="mailto:ievaferdman.1@gmail.com">Send me a message</a>
           or
-          <a href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a/"
+          <a
+            href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a/"
+            aria-label="LinkedIn"
+            target="_blank"
             >connect on LinkedIn</a
           >
           , and let’s discuss how I can help you.
         </p>
       </div>
-      <div class="footer-items">
-        <div class="item-left">
-          <p>Copyright Ieva Ferdman 2024</p>
-        </div>
-        <div class="item-right">
-          <a
-            class="footer-icon"
-            href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a"
-            aria-label="LinkedIn"
-            target="_blank"
-          >
-            <i class="fa-brands fa-linkedin-in fa-lg"></i>
-          </a>
-          <a
-            class="footer-icon"
-            href="https://www.behance.net/IevFerd"
-            aria-label="Behance"
-            target="_blank"
-          >
-            <i class="fa-brands fa-behance fa-lg"></i>
-          </a>
-          <a
-            class="footer-icon"
-            href="https://www.instagram.com/ievaferdman/"
-            aria-label="instagram"
-            target="_blank"
-          >
-            <i class="fa-brands fa-instagram fa-lg"></i>
-          </a>
+      <div>
+        <div class="footer-items">
+          <div class="item-left">
+            <p>Copyright Ieva Ferdman 2024</p>
+          </div>
+          <div class="item-right">
+            <a
+              class="footer-icon"
+              href="https://www.linkedin.com/in/ieva-ferdman-5301aa7a"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in fa-lg"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.behance.net/IevFerd"
+              aria-label="Behance"
+              target="_blank"
+            >
+              <i class="fa-brands fa-behance fa-lg"></i>
+            </a>
+            <a
+              class="footer-icon"
+              href="https://www.instagram.com/ievaferdman/"
+              aria-label="instagram"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-lg"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
