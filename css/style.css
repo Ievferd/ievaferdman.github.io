@@ -7,6 +7,7 @@ Accent Color (Light Blue): #73B4FF;
 */
 * {
   box-sizing: border-box;
+  padding: 0;
 }
 
 /* Foundation */
@@ -121,14 +122,10 @@ nav > ul > li > a:hover {
 nav > ul {
   list-style-type: none;
 }
-
+/* Test for the navigation, this is old version 
 .nav-logo {
-  float: left;
   position: relative;
-}
-
-.brand-logo {
-  max-width: 200px;
+  max-width: 250px;
   padding: 1rem;
   display: inline-block;
 }
@@ -139,7 +136,6 @@ nav > ul {
   display: flex;
   top: 0;
   width: 100%;
-  align-items: center;
   justify-content: space-between;
   padding-top: 8px;
 }
@@ -162,8 +158,42 @@ nav > ul {
   color: #222f3e;
   margin: 8px;
 }
+*/
 
 /* mobile menu-small screens */
+.navbar {
+  padding-bottom: 10px;
+  background-color: #f7f7f771;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+}
+.nav-menu {
+  display: none;
+}
+.nav-logo {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.nav-menu li {
+  text-align: center;
+  margin: 15px auto;
+  font-weight: 500;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+.active {
+  display: block;
+}
 
 /* Hero section */
 .hero-gradient {
@@ -174,6 +204,7 @@ nav > ul {
     #f7f7f7 60%,
     #ffffff 100%
   );
+  background-size: cover;
   display: inline-block;
   /* Sizing */
   padding-bottom: 40px;
@@ -207,7 +238,7 @@ nav > ul {
   padding: 0 50px;
   max-width: 60em;
   margin: 70px auto;
-  margin-top: 85px;
+  margin-top: 100px;
 }
 
 .big-title {
@@ -266,7 +297,7 @@ nav > ul {
   flex-direction: column;
   width: 85%;
   margin: auto;
-  margin-top: 80px;
+  padding-top: 100px;
   max-width: 1200px;
 }
 .row {
@@ -350,7 +381,7 @@ nav > ul {
 Medium devices (640px and larger)
 ================================= */
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 640px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -371,6 +402,40 @@ Medium devices (640px and larger)
   .about-container {
     flex: 100%;
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    background-color: #f7f7f771;
+    backdrop-filter: blur(10px);
+  }
+  .nav-menu {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .nav-menu li {
+    margin: 16px;
+  }
+  .nav-links {
+    margin-left: 40px;
+    font-weight: 600;
+  }
+  .nav-logo {
+    margin-top: 0;
+  }
+  .navbar-toggle {
+    display: none;
   }
 }
 

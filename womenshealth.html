@@ -33,16 +33,14 @@
     <!-- For the header -->
     <header>
       <nav class="navbar">
+        <!-- Menu toggle -->
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fas fa-bars"></i
+        ></span>
         <!-- logo -->
-        <a href="index.html" class="nav-logo">
-          <img
-            class="brand-logo"
-            src="./img/identity/ieva-ferdman-logo.svg"
-            alt="logo"
-        /></a>
-
-        <!-- navigation menu -->
-        <ul class="nav-menu">
+        <a href="index.html" class="nav-logo"> Ieva Ferdman</a>
+        <!-- Large screen navigation menu -->
+        <ul class="nav-menu" id="js-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Work</a>
           </li>
@@ -59,70 +57,71 @@
             >
           </li>
         </ul>
+        <!-- Small Screen Navigation Bar -->
       </nav>
     </header>
     <main>
       <!-- For the hero section -->
       <section class="hero-gradient3">
         <div class="hero-text">
-        <h3 class="hat-title">Sex og Samfunn</h3>
-        <h1 class="big-title">A Website for Women’s Sexual Education</h1>
-        <picture>
-          <source
-            srcset="./img/Project-womenshealth/whealth_hero.jpg"
-            media="(max-width:767px)"
-          />
-          <img
-            src="./img/Project-womenshealth/whealth_hero.jpg"
-            alt="The cover image a project for Womens health"
-          />
-        </picture>
-      </div >
+          <h3 class="hat-title">Sex og Samfunn</h3>
+          <h1 class="big-title">A Website for Women’s Sexual Education</h1>
+          <picture>
+            <source
+              srcset="./img/Project-womenshealth/whealth_hero.jpg"
+              media="(max-width:767px)"
+            />
+            <img
+              src="./img/Project-womenshealth/whealth_hero.jpg"
+              alt="The cover image a project for Womens health"
+            />
+          </picture>
+        </div>
         <div class="hero-text">
-        <h3>Role</h3>
-        <p>
-          Case study as part of studies at Noroff Product Designer, UX
-          Researcher
-        </p>
-        <h3>Methods Used</h3>
-        <ol>
-          <li>Design Thinking Process (Desktop research, Lit. review)</li>
-          <li>Stakeholder Interview</li>
-          <li>Competitor Analysis</li>
-          <li>Survey</li>
-          <li>SWOT Analysis</li>
-          <li>Mind Mapping Workshop</li>
-          <li>Card Sorting</li>
-          <li>Affinity Mapping</li>
-          <li>Sketching</li>
-          <li>Prototyping</li>
-          <li>Usability Testing</li>
-          <li>Analysis</li>
-        </ol>
-        <h3>Duration</h3>
-        <p>5 weeks, 2021</p>
-        <h3>Team</h3>
-        <p>Ieva, Ingrid, Kristin and Lina</p>
-        <h3>Objective</h3>
-        <p>
-          Our project aims to provide education on sexual health, physical
-          well-being, and the rights of WSW (KSK in Norwegian) to both WSW
-          individuals and healthcare professionals.
-        </p>
-        <h3>Target Audience</h3>
-        <p>
-          Our focus is on women of all age groups who may have limited or no
-          information about their well-being and rights, specifically those who
-          engage in relationships with women.
-        </p>
-        <h3>Rationale</h3>
-        <p>
-          In Norway, an estimated 5000 WSW individuals lack sufficient access to
-          accurate information and guidance regarding their related health and
-          rights issues. Our initiative seeks to bridge this information gap and
-          empower this community with essential knowledge.
-        </p>
-      </div>
+          <h3>Role</h3>
+          <p>
+            Case study as part of studies at Noroff Product Designer, UX
+            Researcher
+          </p>
+          <h3>Methods Used</h3>
+          <ol>
+            <li>Design Thinking Process (Desktop research, Lit. review)</li>
+            <li>Stakeholder Interview</li>
+            <li>Competitor Analysis</li>
+            <li>Survey</li>
+            <li>SWOT Analysis</li>
+            <li>Mind Mapping Workshop</li>
+            <li>Card Sorting</li>
+            <li>Affinity Mapping</li>
+            <li>Sketching</li>
+            <li>Prototyping</li>
+            <li>Usability Testing</li>
+            <li>Analysis</li>
+          </ol>
+          <h3>Duration</h3>
+          <p>5 weeks, 2021</p>
+          <h3>Team</h3>
+          <p>Ieva, Ingrid, Kristin and Lina</p>
+          <h3>Objective</h3>
+          <p>
+            Our project aims to provide education on sexual health, physical
+            well-being, and the rights of WSW (KSK in Norwegian) to both WSW
+            individuals and healthcare professionals.
+          </p>
+          <h3>Target Audience</h3>
+          <p>
+            Our focus is on women of all age groups who may have limited or no
+            information about their well-being and rights, specifically those
+            who engage in relationships with women.
+          </p>
+          <h3>Rationale</h3>
+          <p>
+            In Norway, an estimated 5000 WSW individuals lack sufficient access
+            to accurate information and guidance regarding their related health
+            and rights issues. Our initiative seeks to bridge this information
+            gap and empower this community with essential knowledge.
+          </p>
+        </div>
       </section>
       <!-- For the main body -->
       <div class="hero-text">
@@ -681,5 +680,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
