@@ -227,6 +227,9 @@ nav .nav-bar .logo a {
 .nav-links li:hover a::before {
   opacity: 1;
 }
+.sub-nav {
+  display: flex;
+}
 .nav-bar .darkLight {
   display: flex;
   align-items: center;
