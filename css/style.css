@@ -296,10 +296,20 @@ i.cancel {
   background-image: var(--background-image3);
   display: inline-block;
   /* Sizing */
-  padding-bottom: 40px;
   width: 100%;
 }
+.hero-intro {
+  max-width: 45vw;
+  margin-top: 23vh;
+  margin-bottom: 28vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
+.text-light {
+  font-weight: 400;
+}
 .hero-text {
   padding: 0 50px;
   max-width: 60em;
@@ -334,6 +344,7 @@ i.cancel {
 }
 .hat-title {
   color: var(--text-color2);
+  margin-bottom: 30px;
 }
 
 /* project container*/
@@ -521,6 +532,9 @@ Medium devices (640px and larger)
     display: block;
     margin-top: 20px;
   }
+  .sidebarClose {
+    padding: 8px;
+  }
 
   /* Content */
   .row {
@@ -558,7 +572,10 @@ Medium devices (640px and larger)
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .hero-intro {
+    max-width: 100%;
+  }
 }
 
 /* ==============================
