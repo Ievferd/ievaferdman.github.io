@@ -19,6 +19,17 @@ modeToggle.addEventListener("click", () => {
   }
 });
 
+const timeNow = new Date();
+// Get the current hour using getHours(), which returns the hour (0-23)
+const currentHour = timeNow.getHours();
+// Check if the current hour is greater than or equal to 17 (which is 5 PM in 24-hour format)
+if (currentHour >= 17) {
+  // Execute your logic here
+  console.log("It's after 5 PM. Executing logic...");
+} else {
+  console.log("It's before 5 PM. Not executing logic.");
+}
+
 //   js code to toggle sidebar
 sidebarOpen.addEventListener("click", () => {
   nav.classList.add("active");
