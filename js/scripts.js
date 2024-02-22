@@ -3,11 +3,46 @@ const body = document.querySelector("body"),
   modeToggle = document.querySelector(".dark-light"),
   sidebarOpen = document.querySelector(".sidebarOpen"),
   siderbarClose = document.querySelector(".siderbarClose");
-let getMode = localStorage.getItem("mode");
-if (getMode && getMode === "dark-mode") {
-  body.classList.add("dark");
+
+// Function to set mode based on time
+function setModeBasedOnTime() {
+  const timeNow = new Date();
+  const currentHour = timeNow.getHours();
+  // Check if it's between 07:00-18:00 for light mode, otherwise dark mode
+  if (currentHour >= 7 && currentHour < 18) {
+    if (!body.classList.contains("dark")) {
+      // It's already in light mode, do nothing
+    } else {
+      body.classList.remove("dark"); // Change to light mode
+      localStorage.setItem("mode", "light-mode");
+    }
+  } else {
+    if (body.classList.contains("dark")) {
+      // It's already in dark mode, do nothing
+    } else {
+      body.classList.add("dark"); // Change to dark mode
+      localStorage.setItem("mode", "dark-mode");
+    }
+  }
 }
-// js code to toggle dark and light mode
+
+// Function to initialize the mode
+function initializeMode() {
+  let getMode = localStorage.getItem("mode");
+  // If user has a preference, use that
+  if (getMode) {
+    if (getMode === "dark-mode") {
+      body.classList.add("dark");
+    } else {
+      body.classList.remove("dark");
+    }
+  } else {
+    // No user preference, use time-based setting
+    setModeBasedOnTime();
+  }
+}
+
+// js code to toggle dark and light mode manually
 modeToggle.addEventListener("click", () => {
   modeToggle.classList.toggle("active");
   body.classList.toggle("dark");
@@ -19,18 +54,7 @@ modeToggle.addEventListener("click", () => {
   }
 });
 
-const timeNow = new Date();
-// Get the current hour using getHours(), which returns the hour (0-23)
-const currentHour = timeNow.getHours();
-// Check if the current hour is greater than or equal to 17 (which is 5 PM in 24-hour format)
-if (currentHour >= 17) {
-  // Execute your logic here
-  console.log("It's after 5 PM. Executing logic...");
-} else {
-  console.log("It's before 5 PM. Not executing logic.");
-}
-
-//   js code to toggle sidebar
+// js code to toggle sidebar
 sidebarOpen.addEventListener("click", () => {
   nav.classList.add("active");
 });
@@ -43,6 +67,9 @@ body.addEventListener("click", (e) => {
     nav.classList.remove("active");
   }
 });
+
+// Initialize mode on page load
+initializeMode();
 
 // Get the button
 let mybutton = document.getElementById("myBtn");
