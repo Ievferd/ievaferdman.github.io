@@ -355,7 +355,14 @@ i.cancel {
 }
 
 .audio {
-  width: 100%;
+  width: 50%;
+  margin-bottom: 16px;
+}
+.audio-text {
+  color: var(--text-color);
+  padding: 12px 0;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 /* new project styling*/
@@ -552,6 +559,7 @@ i.cancel {
   color: var(--text-color);
   transform: translateY(-7px);
 }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -669,6 +677,9 @@ Medium devices (640px and larger)
   }
 
   /* project */
+  .audio {
+    width: 100%;
+  }
 
   /* footer */
 
