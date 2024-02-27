@@ -305,6 +305,14 @@ i.cancel {
   /* Sizing */
   width: 100%;
 }
+
+.hero-gradient4 {
+  margin-top: 0;
+  background-image: var(--background-image5);
+  display: inline-block;
+  /* Sizing */
+  width: 100%;
+}
 .hero-intro {
   max-width: 45vw;
   margin-top: 23vh;
@@ -348,10 +356,14 @@ i.cancel {
 }
 .text-container p {
   margin-bottom: 16px;
+  max-width: 45vw;
 }
 .hat-title {
   color: var(--text-color2);
   margin-bottom: 30px;
+}
+.subtitle {
+  margin-bottom: 0;
 }
 
 .audio {
@@ -363,6 +375,25 @@ i.cancel {
   padding: 12px 0;
   font-size: 1.2em;
   font-weight: 400;
+}
+.insights {
+  display: flex;
+  width: 100%;
+  padding: 32px;
+  align-items: center;
+  gap: 16px;
+  border: 1px solid var(--text-color2);
+  border-radius: 16px;
+  margin-top: 40px;
+  margin-bottom: 72px;
+}
+.left-insights {
+  width: 50%;
+  padding-left: 16px;
+}
+.right-insights {
+  width: 50%;
+  padding-left: 16px;
 }
 
 /* new project styling*/
@@ -680,6 +711,17 @@ Medium devices (640px and larger)
   .audio {
     width: 100%;
   }
+  .insights {
+    flex-wrap: wrap;
+  }
+  .left-insights {
+    width: 100%;
+    padding-left: 0;
+  }
+  .right-insights {
+    width: 100%;
+    padding-left: 0;
+  }
 
   /* footer */
 
@@ -726,15 +768,11 @@ Medium devices (640px and larger)
     padding: 0;
   }
 }
-
 /* ==============================
-Large devices (1024px or larger)
+Medium devices (max 940px & min 769px)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+@media screen and (max-width: 940px) and (min-width: 769px) {
+  .card-text {
+    background-color: var(--side-nav);
+  }
 }

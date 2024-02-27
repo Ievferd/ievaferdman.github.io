@@ -1,6 +1,6 @@
 const body = document.querySelector("body"),
   nav = document.querySelector("nav"),
-  modeToggle = document.querySelector(".dark-light"),
+  modeToggle = document.querySelector(".darkLight"),
   sidebarOpen = document.querySelector(".sidebarOpen"),
   siderbarClose = document.querySelector(".siderbarClose");
 
