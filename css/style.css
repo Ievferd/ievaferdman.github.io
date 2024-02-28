@@ -722,6 +722,9 @@ Medium devices (640px and larger)
     width: 100%;
     padding-left: 0;
   }
+  .card img {
+    aspect-ratio: 2 / 4;
+  }
 
   /* footer */
 
